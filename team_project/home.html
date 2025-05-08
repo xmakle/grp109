@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Developer Learning Journal</title>
+  <link rel="stylesheet" href="css/homestyle.css"> <!-- This is reference to use css  file -->
+   <nav>
+      <ul>
+       <li><a href="home.html">Home</a></li>
+        <li>Lectures</li>
+        <li>Practice</li>
+        <li>Blog</li>
+        <li>Contact</li>
+        <li>Timeline</li>
+        <li><a href="project_details.html">About</a></li>
+      </ul>
+    </nav>
+</head>
+<body>
+
+  <h1>Developer Learning Journal</h1>
+
+  <div class="form-container">
+    <form id="journalForm">
+      <label for="subject">Learning Subject:</label>
+      <input type="text" id="subject" required />
+
+      <label for="notes">Notes / Takeaways:</label>
+      <textarea id="notes" rows="5" required></textarea>
+
+      <button type="submit">Add Entry</button>
+    </form>
+  </div>
+
+  <div class="entries-container" id="entriesContainer">
+    <h2>Your Journal Entries</h2>
+    <!-- Entries will appear here -->
+  </div>
+
+  <script src="js/homescript.js"></script>  <!-- This is reference to use external JavaScript  file -->
+
+</body>
+</html>
