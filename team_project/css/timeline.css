@@ -1,1 +1,47 @@
+body {
+      background-image: url('../images/timeline.jpg'); 
+      font-family: Arial, sans-serif;
+      padding: 2rem;
+      background-color: #f4f4f4;
+      margin: 0;
+    }
 
+    nav {
+      background-color: #fff;
+      padding: 1rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      margin-bottom: 2rem;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      text-align: center;
+    }
+
+    nav ul li {
+      display: inline;
+      margin: 0 10px;
+      font-weight: bold;
+      cursor: pointer;
+      text-decoration: underline;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #007acc;
+    }
+
+    nav ul li a:hover {
+      color: #005fa3;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    
+
+   
