@@ -1,0 +1,48 @@
+body { /* Body Style with a nice blue wave background */ 
+  background-image: url('https://img.freepik.com/free-vector/abstract-background-with-blue-flowing-lines_1048-15245.jpg?t=st=1746751142~exp=1746754742~hmac=15844e926bec8e6bfaea73658ea6b5fb6b61f6b17106f71242d5bf8b684be4fd&w=900');
+  background-size: cover;
+   background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  font-family: Arial, sans-serif;
+  padding: 2rem;
+  background-color: #f4f4f4; 
+  margin: 0;
+}
+
+/* I think every page on the website ought to have the same nav style */
+nav { 
+  background-color: #fff;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  margin-bottom: 2rem;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #007acc;
+}
+
+nav ul li a:hover {
+  color: #005fa3;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
