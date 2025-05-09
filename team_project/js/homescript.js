@@ -8,13 +8,14 @@
       const notes = document.getElementById('notes').value;   //get the user's input
       const date = new Date().toLocaleDateString(); // representing the current date and time
 
-      const entryHTML = `  // this builds an HTML string
+        // this builds HTML string
+      const entryHTML = ` 
         <div class="entry">
           <h3>${subject}</h3>
           <small>${date}</small>
           <p>${notes}</p>
         </div>
-      `;
+      `;   
 
       entriesContainer.innerHTML += entryHTML; // adds the new entry to the existing content
 
