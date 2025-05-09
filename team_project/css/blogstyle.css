@@ -1,12 +1,7 @@
-body { /* Body Style with a nice blue wave background */ 
-  background-image: url('https://img.freepik.com/free-vector/abstract-background-with-blue-flowing-lines_1048-15245.jpg?t=st=1746751142~exp=1746754742~hmac=15844e926bec8e6bfaea73658ea6b5fb6b61f6b17106f71242d5bf8b684be4fd&w=900');
-  background-size: cover;
-   background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
+body { /* Body Style */ 
   font-family: Arial, sans-serif;
   padding: 2rem;
-  background-color: #f4f4f4; 
+  background-color: #e6f0fa; /* calming blue color */
   margin: 0;
 }
 
@@ -42,7 +37,7 @@ nav ul li a:hover {
   color: #005fa3;
 }
 
-h1 {
+h1 {  /* Header Style */
   text-align: center;
   color: #333;
 }
