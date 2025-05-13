@@ -36,7 +36,10 @@ nav ul li a:hover {
   color: #005fa3;
 }
 
-
+main {
+  padding: 30px;
+  background-color: white;
+}
 
 
 h1 {
