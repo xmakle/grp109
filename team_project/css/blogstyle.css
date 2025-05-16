@@ -1,7 +1,8 @@
 body { /* Body Style */ 
   font-family: Arial, sans-serif;
   padding: 2rem;
-  background-color: #e6f0fa; /* calming blue color */
+  background-color: #f7fbff; /* light blue color */
+  color: #333333;  /* very dark text for accessibility */
   margin: 0;
 }
 
