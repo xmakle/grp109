@@ -6,6 +6,10 @@ body { /* Body Style */
   margin: 0;
 }
 
+p {
+  line-height: 1.5;
+}
+
 /* I think every page on the website ought to have the same nav style */
 nav { 
   background-color: #fff;
