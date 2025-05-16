@@ -5,6 +5,10 @@ body {
   margin: 0;
 }
 
+p {
+  line-height: 1.5;
+}
+
 nav {
   background-color: #fff;
   padding: 1rem;
@@ -29,11 +33,11 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: #007acc;
+  color: #005a9e; 
 }
 
 nav ul li a:hover {
-  color: #005fa3;
+  color: #004a87;
 }
 
 h1 {
