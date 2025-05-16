@@ -5,6 +5,10 @@ body {
   margin: 0;
 }
 
+p {
+  line-height: 1.5;
+}
+
 nav {
   background-color: #fff;
   padding: 1rem;
