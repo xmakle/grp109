@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   selector.addEventListener("change", function () {
     const selected = this.value;
-    const cssFile = selected === "default" ? "default.css" : `${selected}.css`;
+    const cssFile = selected === "default" ? "css/default.css" : `css/${selected}.css`;
     themeLink.href = cssFile;
 
     // hide all content sections
