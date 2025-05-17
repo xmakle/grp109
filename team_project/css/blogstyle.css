@@ -52,8 +52,7 @@ h1 {  /* Header Style */
 }
 
 .siteimprove-results img {
-  max-width: 100%;
-  width: 250px; 
+  width: 280px; 
   height: 600px;
   border: 1px solid #ccc;
   border-radius: 8px;
