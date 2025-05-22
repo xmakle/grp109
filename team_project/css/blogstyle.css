@@ -45,6 +45,12 @@ h1 {  /* Header Style */
   text-align: center;
   color: #333;
 }
+
+h2 {  /* Num of Iteration Style */
+  text-align: center;
+  color: #333;
+}
+
 /* Styling to organize the siteimprove images */
 .siteimprove-results {
   display: flex;
