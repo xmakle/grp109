@@ -1,3 +1,4 @@
+// The code is created by Lev L
 //using DOMContentLoaded to ensure elements are ready
 document.addEventListener("DOMContentLoaded", function () {
   const selector = document.getElementById("memberSelector");
