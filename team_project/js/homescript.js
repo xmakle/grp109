@@ -1,3 +1,4 @@
+    // The code is created by Lev L
     const form = document.getElementById('journalForm'); // gets the form element with from the HTML
     const entriesContainer = document.getElementById('entriesContainer'); // this is a container where journal entries will appear
 
