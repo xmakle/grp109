@@ -24,19 +24,21 @@
   <div class="form-container">
     <form id="journalForm">
       <label for="subject">Learning Subject:</label>
-      <input type="text" id="subject" required >
+      <input type="text" id="subject" placeholder="Enter subject" required/>
       <label for="notes">Notes / Takeaways:</label>
-      <textarea id="notes" rows="5" required></textarea>
-      <button type="submit">Add Entry</button>
+      <textarea id="notes" placeholder="Enter notes" rows="5" required></textarea>
+      <button type="submit" id="addEntryBtn">Add Entry</button>      
     </form>
   </div>
 
   <div class="entries-container" id="entriesContainer">
     <h2>Your Journal Entries</h2>
     <!-- Entries will appear here -->
+   
   </div>
 
   <script src="js/homescript.js"></script>  <!-- This is reference to use external JavaScript  file -->
-
+  <script src="js/journalentriesscript.js"></script>
+  
 </body>
 </html>
