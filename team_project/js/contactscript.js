@@ -1,9 +1,9 @@
  document.getElementById("contactForm").addEventListener("submit", function(e) {
     e.preventDefault(); // prevent default form submission
 
-    const name = document.getElementById("name").value.trim();
-    const email = document.getElementById("email").value.trim();
-    const message = document.getElementById("message").value.trim();
+    const name = filterInput(document.getElementById("name").value.trim());
+    const email = filterInput(document.getElementById("email").value.trim());
+    const message = filterInput(document.getElementById("message").value.trim());
     const formMessage = document.getElementById("formMessage");
 
     formMessage.innerHTML = ""; // reset messages
@@ -27,4 +27,11 @@
     // Regex for email validation
     const re = /^[^@]+@[^@]+\.[^@]+$/;
     return re.test(email.toLowerCase());
+  }
+
+    // function to protect from code injection in user input sections
+  function filterInput(input) {
+    const div = document.createElement("div");
+    div.textContent = input;
+    return div.innerHTML;
   }
