@@ -17,15 +17,20 @@
       formMessage.innerHTML = "<p class='error'>Please enter a valid email address.</p>";
       return;
     }
-
+    // Completely block any input containing html tags
+    const tagPattern = /<[^>]*>/g;
+    if (tagPattern.test(name) || tagPattern.test(message)) {
+      formMessage.innerHTML = "<p class='error'>HTML tags are not allowed in Name or Message fields.</p>";
+      return;
+    }
     // Simulate sending
     formMessage.innerHTML = "<p class='success'>Thank you! Your message has been sent.</p>";
     document.getElementById("contactForm").reset();
-  });
+    });
 
-  function validateEmail(email) {
-    // Regex for email validation
-    const re = /^[^@]+@[^@]+\.[^@]+$/;
-    return re.test(email.toLowerCase());
-  }
+    function validateEmail(email) {
+      // Regex for email validation
+      const re = /^[^@]+@[^@]+\.[^@]+$/;
+      return re.test(email.toLowerCase());
+    }
 
