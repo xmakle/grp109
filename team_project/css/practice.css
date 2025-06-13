@@ -27,8 +27,8 @@ nav ul li {
   display: inline;
   margin: 0 10px;
   font-weight: bold;
-  cursor: pointer;             /* Add this */
-  text-decoration: underline;  /* Add this */
+  cursor: pointer;             
+  text-decoration: underline;  
 }
 
 nav ul li a {
