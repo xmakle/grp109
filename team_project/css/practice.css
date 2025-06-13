@@ -66,6 +66,7 @@ header {
   border-right: 1px solid #ccc;
   overflow: auto;
   background-color: #f9f9f9;
+  width: 100%;
 }
 
 label {
