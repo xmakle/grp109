@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="css/practice.css"> <!-- This is reference to use css  file -->
 </head>
 <body>
-   <nav>
+   <nav> <!-- navigation section -->
       <ul>
         <li><a href="home.html">Home</a></li>
         <li><a href="lectures.html">Lectures</a></li>
@@ -20,25 +20,25 @@
       </ul>
     </nav>
   <h1>Online Practice</h1>
+  
+  <header>Live Editor (HTML / CSS / JS)</header>
 
-  <header>
-    <h2>Live Editor (HTML / CSS / JS)</h2>
-  </header>
+  <div class="container">  <!-- editor section -->
+    <div class="editor">
+      <label>HTML:</label>
+      <textarea id="htmlInput" placeholder="Write HTML here..."></textarea>
 
-  <div class="editor">
-    <label for="htmlInput">HTML:</label>
-    <textarea id="htmlInput" placeholder="Write HTML here..."></textarea>
+      <label>CSS:</label>
+      <textarea id="cssInput" placeholder="Write CSS here..."></textarea>
 
-    <label for="cssInput">CSS:</label>
-    <textarea id="cssInput" placeholder="Write CSS here..."></textarea>
+      <label>JavaScript:</label>
+      <textarea id="jsInput" placeholder="Write JavaScript here..."></textarea>
+    </div>
 
-    <label for="jsInput">JavaScript:</label>
-    <textarea id="jsInput" placeholder="Write JavaScript here..."></textarea>
+    <iframe id="preview"></iframe>
   </div>
 
-  <iframe id="preview"></iframe>
-
-  <script src="js/practice.js"></script> <!-- Link to external JS file -->
+  <script src="js/practice.js"></script>
 
 </body>
 </html>
