@@ -1,24 +1,18 @@
-    // define input and preview areas 
-    const htmlInput = document.getElementById('htmlInput');
-    const cssInput = document.getElementById('cssInput');
-    const jsInput = document.getElementById('jsInput');
-    const preview = document.getElementById('preview');
+// update preview
+function updatePreview() {
+  const html = document.getElementById("htmlInput").value;
+  const css = `<style>${document.getElementById("cssInput").value}</style>`;
+  const js = `<script>${document.getElementById("jsInput").value}<\/script>`;
 
-    // update preview area
-    function updatePreview() {
-        const htmlContent = htmlInput.value;
-        const cssContent = `<style>${cssInput.value}</style>`;
-        const jsContent = `<script>${jsInput.value}<\/script>`;
+  const output = html + css + js;
+  const iframe = document.getElementById("preview");
+  const doc = iframe.contentDocument || iframe.contentWindow.document;
 
-        const fullContent = `
-            ${htmlContent}
-            ${cssContent}
-            ${jsContent}
-        `;
+  doc.open();
+  doc.write(output);
+  doc.close();
+}
 
-        preview.srcdoc = fullContent;
-    }
-
-    htmlInput.addEventListener('input', updatePreview);
-    cssInput.addEventListener('input', updatePreview);
-    jsInput.addEventListener('input', updatePreview);
+document.getElementById("htmlInput").addEventListener("input", updatePreview);
+document.getElementById("cssInput").addEventListener("input", updatePreview);
+document.getElementById("jsInput").addEventListener("input", updatePreview);
