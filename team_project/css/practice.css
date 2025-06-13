@@ -43,11 +43,12 @@ h1 {
 }
 
 header {
-  background-color: #007bff;
-  color: white;
-  padding: 10px;
-  text-align: center;
-  font-size: 1.2rem;
+    background-color: transparent; 
+    color: #333; 
+    padding: 0;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1rem; 
 }
 
 /* main editor  */
