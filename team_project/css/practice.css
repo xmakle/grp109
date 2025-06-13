@@ -5,14 +5,15 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
+  overflow-x: hidden; /* prevent horizontal scrollbar globally */
 }
 
-/* navigation  */
+/* navigation */
 nav {
   background-color: #fff;
   padding: 1rem;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
- }
+}
 
 nav ul {
   list-style: none;
@@ -42,21 +43,13 @@ h1 {
   margin: 10px 0;
 }
 
-header {
-    background-color: transparent; 
-    color: #333; 
-    padding: 0;
-    text-align: center;
-    font-size: 1.5rem;
-    margin-bottom: 1rem; 
-}
-
-/* main editor  */
+/* main editor */
 .container {
   flex: 1;
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: 100%;
+  overflow: hidden; /* prevent scroll from grid layout */
 }
 
 /* editor */
@@ -65,9 +58,9 @@ header {
   flex-direction: column;
   padding: 10px;
   border-right: 1px solid #ccc;
-  overflow: auto;
   background-color: #f9f9f9;
-  width: 100%;
+  overflow-y: auto; /* only vertical scrolling */
+  overflow-x: hidden; /* disable horizontal scrolling */
 }
 
 label {
@@ -76,12 +69,13 @@ label {
 }
 
 textarea {
-  width: 100%;
+  width: 98%; /* prevent overflow */
   height: 150px;
   padding: 8px;
   font-family: monospace;
   resize: vertical;
   margin-bottom: 10px;
+  box-sizing: border-box; /* includes padding in width calculation */
 }
 
 /* preview */
