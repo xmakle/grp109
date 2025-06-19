@@ -114,3 +114,23 @@ body {
     color: #555;
 }
 
+
+a {
+    color: #0077cc; /* link color */
+    text-decoration: none;
+    position: relative;
+}
+
+a:hover {
+    color: #cc3300; /* Hover color */
+}
+
+a:visited {
+    color: #551A8B; /* Clicked/visited link color */
+}
+
+
+
+
+
+
