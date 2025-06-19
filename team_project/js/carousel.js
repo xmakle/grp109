@@ -51,7 +51,7 @@ function startCountdown() {
 // reset countdown when manually navigating
 function resetCountdown() {
     clearInterval(timer);
-    countdown = 4;
+    countdown = 3;
     timerDisplay.textContent = countdown;
     startCountdown();
 }
