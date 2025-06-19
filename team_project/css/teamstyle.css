@@ -80,12 +80,14 @@ button {
     color: white;
     border: none;
     padding: 10px 20px;
-    margin: 5px;
+    margin: 20px auto;      
     font-size: 1rem;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    display: block;          
 }
+
 
 button:hover {
     background-color: #0056b3;
@@ -96,14 +98,20 @@ button:hover {
 }
 
 /* timer */
+
 #timer {
-    position: absolute;
-    top: 20px;
-    left: 20px;
+    margin: 40px auto 0 auto;    
+    display: block;
     background-color: #222;
     color: #fff;
     padding: 10px 15px;
     border-radius: 5px;
     font-size: 1.5rem;
     font-weight: bold;
+    text-align: center;
+    width: fit-content;         
+}
+
+#footer {
+    text-align: center;
 }
