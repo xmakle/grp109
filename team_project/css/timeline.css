@@ -87,3 +87,7 @@ h1 {
   border-color: #ffa726;          /* orange border */
   background-color: #fff3e0;      /* light orange background */
 }
+
+#footer {
+    text-align: center;
+}
