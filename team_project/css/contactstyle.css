@@ -121,3 +121,7 @@ form {
       font-size: 1em;
       margin-top: 10px;
     }
+
+#footer {
+    text-align: center;
+}
